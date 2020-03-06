@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :people
 
   get '/frequency_checker', to: 'people#frequency_checker'
-  # '
+  get '/duplicate_checker', to: 'people#duplicate_checker'
 
   root 'people#home'
 end
